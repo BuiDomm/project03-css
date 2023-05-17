@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", "san-serif";
+}
+
+/* Comon CSS */
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+
+/* ===========Header Css============= */
+
+.header-fixed {
+    padding-top: 30px;
+    background: #10375c;
+}
+
+.header-fixed .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-fixed .body .list-nav {
+    display: flex;
+}
+.header-fixed .body .list-nav .nav {
+    padding: 5px 21px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+
+    color: #c9d2da;
+}
