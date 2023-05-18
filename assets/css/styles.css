@@ -11,6 +11,9 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", "san-serif";
 }
+:root {
+    --primary-color: #10375c;
+}
 
 /* Comon CSS */
 
@@ -18,16 +21,33 @@ body {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    max-width: calc(100% - 48px);
 }
 a {
     text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+    padding: 15px 18px;
+    background: #2e80ce;
+    border-radius: 30px;
+    min-width: 205px;
+    text-align: center;
 }
 
 /* ===========Header Css============= */
 
 .header-fixed {
+    position: sticky;
+    top: -15px;
+    z-index: 1;
     padding-top: 30px;
-    background: #10375c;
+    background: var(--primary-color);
+    padding-bottom: 10px;
 }
 
 .header-fixed .body {
@@ -37,13 +57,107 @@ a {
 }
 .header-fixed .body .list-nav {
     display: flex;
+    align-items: center;
 }
 .header-fixed .body .list-nav .nav {
     padding: 5px 21px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.75;
     text-align: center;
 
     color: #c9d2da;
+}
+.header-fixed .body .list-nav .nav.active {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+.header-fixed .body .list-nav .active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.header-fixed .body .action {
+    display: flex;
+    align-items: center;
+}
+.header-fixed .body .action .link-action {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
+}
+.header-fixed .body .action .btn-header {
+    min-width: 104px;
+    padding: 7px 21px;
+    margin-left: 28px;
+}
+/* ===========Hero CSS=========== */
+
+.hero {
+    padding-top: 66px;
+    background: var(--primary-color);
+    height: calc(100vh - 74px);
+}
+.hero--body {
+    display: flex;
+}
+.hero--body--right {
+    width: 517px;
+}
+.hero--body--right__title {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.hero--body--right__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+.hero--body--right--info {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 0 38px;
+}
+.hero--body--right--info__contact {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero--body--left {
+    display: flex;
+    align-items: center;
+    margin-left: 113px;
+}
+
+.hero--body--left__img1 {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.hero--body--left__img2 {
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 0px 6px 6px 0px;
 }
