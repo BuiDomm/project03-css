@@ -236,3 +236,204 @@ a {
 .services__body__info__btn-md {
     margin-top: 55px;
 }
+/* =================Work CSS=================== */
+
+.work {
+    margin-top: 170px;
+    background: #f7fbff;
+}
+.work__block {
+    padding: 100px 0;
+}
+.work__top__title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+.work__top__desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #575f66;
+}
+.work__list {
+    display: flex;
+    padding-top: 70px;
+}
+.work__list__block {
+    width: 31.6%;
+    padding: 42px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+}
+.work__list__block + .work__list__block {
+    margin-left: 30px;
+}
+.work__list__block--active {
+    border: 16px solid #2e80ce;
+}
+
+.work__list__item__title {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.38;
+    color: #10375c;
+}
+.work__list__item__desc {
+    margin-top: 28px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
+}
+.work__list__item__cta {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #575f66;
+}
+.work__list__item__cta--active {
+    color: #2e80ce;
+    font-weight: 400;
+}
+.work__list__block:hover {
+    cursor: pointer;
+    transform: translateY(-16px);
+}
+/* ========Features CSS============ */
+
+.features {
+    padding: 85px 0;
+    margin-top: 85px;
+}
+.features__blocks {
+    display: flex;
+}
+.features__media {
+    width: 48%;
+}
+.features__images {
+    position: relative;
+    padding-bottom: 121px;
+}
+.features__img:first-child {
+    width: 512px;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 370px;
+}
+.features__img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 332px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.features__info {
+    margin-left: 130px;
+    width: 470px;
+}
+.features__info__title {
+    margin-top: 82px;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+.features__info__desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #575f66;
+}
+.features__info__btn {
+    margin-top: 38px;
+}
+/* ================Doctors CSS=============== */
+.doctors {
+    margin-top: 85px;
+}
+.doctors__top {
+    text-align: center;
+}
+.doctors__top__title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375c;
+}
+.doctors__top__btn {
+    margin-top: 53px;
+}
+.doctors__list {
+    margin-top: 70px;
+    display: flex;
+    gap: 0 34px;
+}
+.doctors__list__item {
+    flex: 1;
+    border-radius: 6px;
+}
+.doctors__item__img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+.doctors__item__name {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #10375c;
+}
+.doctors__item__desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #575f66;
+}
+
+.doctors__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    display: flex;
+    gap: 0 18px;
+}
+.doctors__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    background-color: #fff;
+    color: #575f66;
+    outline: none;
+    transition: 0.25s;
+}
+.doctors__control:hover {
+    color: #fff;
+    cursor: pointer;
+    background: #2e80ce;
+    border: 1px solid #2e80ce;
+}
+.doctors__control--rotate {
+    rotate: 180deg;
+}
