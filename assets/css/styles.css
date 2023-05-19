@@ -437,3 +437,47 @@ a {
 .doctors__control--rotate {
     rotate: 180deg;
 }
+/* ================App CSS========== */
+
+.app {
+    margin-top: 265px;
+}
+.app .app-block {
+    position: relative;
+    display: flex;
+    background: #2e80ce;
+    border-radius: 4px;
+    height: 427px;
+}
+.app__media {
+    position: absolute;
+    bottom: -4px;
+    left: 70px;
+}
+.app__info {
+    position: absolute;
+    right: 70px;
+    top: 76px;
+    width: 50.1%;
+}
+.app__info__title {
+    font-weight: 600;
+    font-size: 5rem;
+    width: 489px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.app__info__desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.app__info__platform {
+    margin-top: 38px;
+    display: flex;
+    gap: 0 30px;
+}
