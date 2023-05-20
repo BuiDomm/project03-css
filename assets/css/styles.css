@@ -197,6 +197,18 @@ a {
     line-height: 1.67;
     color: #575f66;
 }
+.block--svg--services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 19px 0 22px;
+    border-radius: 50%;
+    background: #eff6fd;
+    transition: 0.25s;
+}
+
 .services__body {
     display: flex;
     margin-top: 70px;
@@ -211,17 +223,29 @@ a {
 }
 .services__body__info {
     margin-left: 130px;
+    margin-top: 35px;
 }
 .services__body__info__item {
     display: flex;
     align-items: center;
     height: 128px;
 }
-.services__body__info__item--active {
+.services__body__info__item:hover {
     background: #ffffff;
     box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    cursor: pointer;
 }
+.services__body__info__item:hover .block--svg--services {
+    background: #2e80ce;
+}
+.services__body__info__item:hover .services__body__info__item__img {
+    color: #fff;
+}
+.services__body__info__item__img {
+    color: #10375c;
+}
+
 .services__body__info__item__moreInfo {
     width: 351px;
 }
@@ -242,6 +266,7 @@ a {
 .services__body__info__btn-md {
     margin-top: 55px;
 }
+
 /* =================Work CSS=================== */
 
 .work {
